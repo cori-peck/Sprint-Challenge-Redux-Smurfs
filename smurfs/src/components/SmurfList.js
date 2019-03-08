@@ -5,10 +5,10 @@ const SmurfList = props => {
     return (
         <div>
             {props.smurfs.map((smurf) => 
-                <div>
-                    <h4 key={smurf.id}>{smurf.name}</h4>
-                    <p>{smurf.age}</p>
-                    <p>{smurf.height}</p>
+                <div key={smurf.name}>
+                    <h4>{smurf.name}</h4>
+                    <p>{smurf.age} smurf years old</p>
+                    <p>{smurf.height}cm</p>
                 </div>
                 )}
         </div>
